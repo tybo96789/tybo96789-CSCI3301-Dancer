@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<style>
+#user_input
+{
+  text-align: center;
+vertical-align: middle;
+line-height: inherit;
+border: 1px solid #73AD21;
+padding: 10px;
+}
+div .containerK
+{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  justify-content: center;
+
+}
+img:hover{
+      transition: all 0.3s; /*applies to all pictures*/
+      transform: scale(1.1);
+}
+</style>
+<script type="text/javascript">///////////JAVASCRIPT START/////////////////
+var ans1 = document.getElementById("yes").value;
+var ans2 = document.getElementById("no").value;
+var style1 = document.getElementById("jazz").value;
+var style2 = document.getElementById("hip_hop").value;
+var style3 = document.getElementById("ballet").value;
+var Full_name_modify= document.getElementById("full_name").value;
+var studio = document.getElementById("studio_modify").value;
+var dancer = document.getElementById("dancer_modify").value;
+</script><!---javascript end---------------------->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"> <!--sets width of website-->
+    <meta name = "description" content="About this Database">
+    <meta name ="keywords" content="dancer, ballet, hiphop, jazz">
+    <title>Modify</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" href="alter2.png">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+  </head>
+  <body>
+<!--NAVIGATIONAL TOP BAR------------------------------->
+    <header>
+      <div class = "container"><!--Navigation Area-->
+          <div id="Basename">
+              <h1><span class="highlight">Dancer</span> Database</h1>
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="waipahu.html" style="text-decoration:none">Waipahu</a></li>
+                  <li><a href="kaneohe.html" style="text-decoration:none">Kaneohe</a></li>
+                  <li><a href="search.html" style="text-decoration:none">Search Database</a></li>
+                  <li><a href="index.html" style="text-decoration:none">Home</a></li>
+              </ul>
+          </nav>
+      </div>
+    </header>
+<!--NAVIGATIONAL TOP BAR------------------------------->
+
+      <section><!--This Section contains information about the Database-->
+        <div class="container">
+        <h4 align="center">Aloha! Please fill out the information below if you want to add/delete any data within the database. We will review your request.</h4>
+
+          <div id="user_input"><!--form fill start-->
+            <!--name values-->
+        <p>Full Name: <input type="text" name="full_name" placeholder="Philip Enos"/></p>
+          <hr style="width:90% "> </hr>
+          <!--studio value-->
+        Studio Name: <input type="text" name="studio_modify" placerholder="..."/><br />
+        <!--Dancer value-->
+        Dancer Name: <input type="text" name="dancer_modify" placerholder="..."/><br />
+        Does this Dancer belong in a Team?<br />
+        <!--yes and no values-->
+        Yes<input type="radio" value="yes" name="team"><br />
+        No<input type="radio" value="no" name="team"><br />
+        <!--Style Values-->
+        Style: <select name="style">
+          <option value="hip_hop">Hip-Hop</option>
+          <option value="ballet">Ballet</option>
+          <option value="jazz">Jazz</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" id="" target="_blank">
+        </div><!--Form fill end-->
+      </div>
+        </section>
+  </body>
+</html>

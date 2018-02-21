@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<style>
+img:hover{
+      transition: all 0.3s; /*applies to all pictures*/
+      transform: scale(1.1);
+}
+#post
+{
+  text-align: center;
+vertical-align: middle;
+line-height: inherit;
+}
+#style
+{
+  text-align: center;
+vertical-align: middle;
+line-height: inherit;
+}
+</style>
+<script type="text/javascript">//////////////////////JAVASCRIPT START////////////////////////
+var location_ = document.getElementById("loc").value;
+var search_ = document.getElementById("find").value;
+var  dancer_ = document.getElementById("dancer_search").value;
+var  teacher_ = document.getElementById("instructor_search").value;
+var  s1_search= document.getElementById("hip_hop").value;
+var  s2_search= document.getElementById("jazz").value;
+var  s3_search= document.getElementById("ballet").value;
+</script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"> <!--sets width of website-->
+    <meta name = "description" content="About this Database">
+    <meta name ="keywords" content="dancer, ballet, hiphop, jazz">
+    <title>Search</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" href="alter2.png">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class = "container"><!--Navigation Area-->
+          <div id="Basename">
+              <h1><span class="highlight">Dancer</span> Database</h1>
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="waipahu.html" style="text-decoration:none">Waipahu</a></li>
+                  <li><a href="kaneohe.html" style="text-decoration:none">Kaneohe</a></li>
+                  <li><a href="modify.html" style="text-decoration:none">Add/Delete</a></li>
+                  <li><a href="index.html" style="text-decoration:none">Home</a></li>
+              </ul>
+          </nav>
+      </div>
+    </header>
+    <section id="boxes">
+      <div class="container">
+      <form>
+        <h4 align="center">Aloha! Please fill out the information accordingly, to search our database.</h4>
+        <!--location input values-->
+        <p align="center">Location: <input type="text" name="loc" placeholder=".."></p>
+        <!--find input value-->
+        <p align="center">Search: <input type="text" name="find" placeholder=".."></p>
+        <hr style="width:90% "> </hr>
+        <div class="container"><!--container start-->
+          <div id="post"><!--position values start-->
+            Position: <select name="position">
+              <option value="dancer_search">Dancer</option>
+              <option value="instructor_search">Instructor</option>
+          </select>
+
+        </div><!--position end-->
+          </div><!--Container -->
+            <div class="container"><!--container start-->
+            <div id="style"><!--Style values start-->
+              Style: <select name="style">
+                <option value="hip_hop">Hip-Hop</option>
+                <option value="ballet">Ballet</option>
+                <option value="jazz">Jazz</option>
+                </select>
+        </div><!--Style end-->
+        </div><!--container end-->
+
+      </form>
+      </div>
+    </section>
+  </body>
+</html>

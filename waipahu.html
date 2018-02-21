@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<style>
+#wrapper {
+  float: left;
+  width: 2000px;
+  height:100px;
+  margin:auto auto auto auto;
+}
+#style p{
+    color: black;
+}
+#instructor p{
+    color: black;
+}
+#dancers p{
+    color: black;
+}
+
+#instructor{
+  float:left;
+  height:150px;
+  width: 250px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  color: black;
+  margin:50px;
+  background-image:url("./IMG/Studio808/instructor.jpg");
+  opacity:0.5;
+  border-radius: 8px;
+}
+#instructor:hover{
+  transition: .3s;
+  opacity: 1;
+  color:black;
+}
+#dancers{
+  float:left;
+  height:150px;
+  width: 250px;
+  text-align: center;
+    font-weight: bold;
+  line-height: 100px;
+
+  margin:50px;
+  background-image:url("./IMG/Studio808/dancers.jpg");
+  opacity:0.5;
+  border-radius: 8px;
+}
+#dancers:hover{
+  transition: .3s;
+  opacity: 1;
+  color:black;
+}
+#style{
+  float:left;
+  height:150px;
+  width: 250px;
+  text-align: center;
+    font-weight: bold;
+  line-height: 100px;
+  color: black;
+  margin:50px;
+  background-image:url("./IMG/Studio808/style.jpg");
+  opacity:0.5;
+  border-radius: 8px;
+}
+#style:hover{
+  transition: .3s;
+  opacity: 1;
+  color:black;
+}
+</style>
+<script type="text/javascript">///////////////////////////////////////JAVASCRIPT START//////////////////////////////////
+//S1,S2,S3 stands for style1 etc.
+//setup variables incase
+//Studio 808
+var stud808_S1 = document.getElementById("hip_hop_808").value;
+var stud808_S2 = document.getElementById("ballet_808").value;
+var stud808_S3 = document.getElementById("jazz_808").value;
+var stud808_name = document.getElementById("name_808").value;
+var stud808_position = document.getElementById("position_808").value;
+var submit_1= document.getElementById("Submit").value;
+
+//Playground HI
+var playHI_S1 = document.getElementById("hip_hop_play").value;
+var playHI_S2 = document.getElementById("ballet_play").value;
+var playHI_S3 = document.getElementById("jazz_play").value;
+var playHI_name = document.getElementById("name_playHI").value;
+var playHI_position = document.getElementById("position_playHI").value;
+var submit_2 = document.getElementById("Submit").value;
+
+//Hypersquad
+var hyper_S1 = document.getElementById("hip_hop_hyper").value;
+var hyper_S2 = document.getElementById("jazz_hyper").value;
+var hyper_s3 = document.getElementById("ballet_hyper").value;
+var hyper_name = document.getElementById("name_hyper").value;
+var hyper_position = document.getElementById("position_hyper").value;
+var submit_3 = document.getElementById("Submit").value;
+
+//dont mind bottom code yet..
+	function correct(){
+	var name = document.getElementById("name");
+	var commenct = document.getElementById("comment");
+
+	if(name.value.length>0&& comment.value.length>0)
+		document.getElementById("page_sub").disabled = false;
+	else(name.value.length<0 && comment.value.length < 0)
+		document.getElementById("page_sub").disabled = true;
+		}
+//dont mind this either
+window.onload = function(){
+	document.getElementById("name").addEventListener('input', valid);
+	document.getElementById("comment").addEventListener('input', valid);
+};
+</script><!---JAVASCRIPT END----------------------------------------->
+  <head>
+    <title>Waipahu</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+  <body>
+    <header>
+      <div class = "container"><!--Navigation Area-->
+          <div id="Basename">
+              <h1><span class="highlight">Dancer</span> Database</h1>
+          </div>
+          <nav>
+              <ul>
+                <li><a href="kaneohe.html" style="text-decoration:none">Kaneohe</a></li>
+                <li><a href="Search.html" style="text-decoration:none">Search Database</a></li>
+                <li><a href="modify.html" style="text-decoration:none">Add/Delete</a></li>
+                <li><a href="index.html" style="text-decoration:none">Home</a></li>
+              </ul>
+          </nav>
+      </div>
+    </header>
+
+      <section id="waipahuimg"><!--Waipahu Location Information-->
+          <div class="container">
+              <h1><span class="highlight">Wai</span><span class="highlight2">pahu</span></h1>
+              <p>Waipahu is a former sugarcane plantation town and now census-designated place located in the ʻEwa District on the island of Oʻahu in the City and County of Honolulu, Hawaiʻi, United States. As of the 2010 Census, the CDP population was 38,216</p>
+          </div>
+        </section><!--Waipahu Location Information-->
+
+        <section id="studios"><!--Entire Section-->
+          <div class="container"><!--Outermost div-->
+            <h1>Studio 808</h1>
+              <p>The mission of STUDIO 808 DANCEPROJECT llc is to teach and train individuals of all ages the art of dance.
+                The studio will educate, encourage and nurture these students who find dance appealing, fun and a learning experience. STUDIO 808 DANCEPROJECT will support them in fulfilling their development through classes, programs and performances.
+              </p>
+                <form id="textField" action="" method="post">
+                  <!--Studio 808 name input-->
+                  <p >Name <input type="text" name="name_808" placeholder="..."></p>
+                  <!--Studio 808 position input-->
+                    <p >Position <input type="text" name="position_808" placeholder="..."></p>
+                    <!--Studio 808 Style Select-->
+                    Style: <select name="style">
+                      <option value="hip_hop_808">Hip-Hop</option>
+                      <option value="ballet_808">Ballet</option>
+                      <option value="jazz_808">Jazz</option>
+                      </select>
+                        <!--Studio 808 Style Select-->
+                      <br>
+                      <br>
+                    <input type="submit" name="submit_808" value="Submit">
+                </form>
+            </div><!--Outermost div-->
+          <hr style="width:90% "> </hr>
+  <div class="container"><!--Outermost div-->
+    <h1>Playground HI</h1>
+      <p>    Through a wide range of resources, The Playground equips dancers with the knowledge of dance through interactive and foundational teachings. We train dancers to master their styles of dance and have them explore other genres so that they learn teamwork and integrity through the artistic styles of our choreographers. The Playground: A community for dance and a dance for the community. We empower the dance community by sharing the knowledge of dance through an inspirational, artistic, and diverse environment.</p>
+      <!--Playground HI name input-->
+      <p >Name <input type="text" name="name_playHI" placeholder="..."></p>
+      <!---Playground HI position input-->
+        <p >Position <input type="text" name="position_playHI" placeholder="..."></p>
+        <!--Playground HI style select-->
+        Style: <select name="style">
+          <option value="hip_hop_play">Hip-Hop</option>
+          <option value="ballet_play">Ballet</option>
+          <option value="jazz_play">Jazz</option>
+          </select>
+          <!--Playground HI style select-->
+          <br>
+          <br>
+        <input type="submit" name="submit_2" value="Submit">
+    </div><!--Outermost div-->
+      <hr style="width:90% "> </hr>
+      <div class="container"><!--Outermost div-->
+        <h1>HyperSquad</h1>
+          <p>Our philosophy is to take the kids off the streets and into street dancing.
+            Street Hip Hop is what we specialize in to include Jazz, B-Boy and B-Girl, Poppin, Krumping, and more.  Our youngest dancers start at 3 yrs old.  Our out-reach program includes Free class for all high school students on Saturdays from 2 - 3pm.  Also FREE is every Friday night's 8-9:30pm B-Boy and B-Girl Open session.  We are accepting donations so we can enroll more kids who have that passion to dance.  We have an annual concert and we enter major international dance competitions as well as perform for parties and private events. </p>
+            <!--Hypersquad name input-->
+            <p >Name <input type="text" name="name_Hyper" placeholder="..."></p>
+            <!--Hypersquad Position Input-->
+              <p >Position <input type="text" name="position_Hyper" placeholder="..."></p>
+              <!--Hypersquad Style Select-->
+              Style: <select name="style">
+                <option value="hip_hop_hyper">Hip-Hop</option>
+                <option value="ballet_hyper">Ballet</option>
+                <option value="jazz_hyper">Jazz</option>
+                </select>
+                <!--Hypersquad Style Select-->
+                <br>
+                <br>
+              <input type="submit" name="submit_3" value="Submit">
+          </div><!--First Inner Div-->
+        </div><!--Outermost div-->
+</section>
+  <footer>
+  <p>Copyright 2017</p>
+  </footer>
+  </body>
+</html>

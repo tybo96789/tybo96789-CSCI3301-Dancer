@@ -1,0 +1,215 @@
+body{
+  font: 15px/1.5 Arial, Helvectia, sans-serif;
+  padding:0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container{/*Container Class*/
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  justify-content: center;
+
+}
+header ul{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 10px;
+  min-height: 50px;
+  position:fixed;
+  overflow: hidden;
+  width:100%;
+  background: rgba(0, 0, 0, 0.3);
+
+
+}
+  header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+
+  }
+
+  header ul{
+    margin: 0;
+    padding: 0;
+  }
+
+  header li{
+    float: left;
+    display: inline;
+    padding: 0 20px;
+  }
+
+  header #Basename{
+    float: left;
+  }
+  header #Basename h1{
+    margin: 0;
+
+  }
+  header nav{
+    float: right;
+    margin-top: 10px;
+  }
+
+  header .highlight, header .current a{
+    color: #008080;
+    font-weight:bold;
+  }
+  header a:hover{
+    color:#cccccc;
+    font-weight: bold;
+  }
+  section{
+
+  }/*About the team*/
+section h2{
+  text-align: center;
+  font-size: 30px;
+}
+/************************waipahu css************************/
+#waipahuimg{
+  min-height:550px;
+  background:url('../IMG/Studio808/waipahu.jpg')0 -300px;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: black;
+}
+#waipahuimg h1{
+  margin-top: 100px;
+  font-size:55px;
+}
+#waipahuimg p{
+  margin-top: 50px;
+  font-size:18px;
+}
+section .highlight{
+  color: #3767ba;
+  font-weight:bold;
+}
+section .highlight2{
+  color: 		#D4AF37;
+}
+section .hightlight3{
+  color: #008080;
+}
+
+/**************************studio 808 images and css**************************/
+#studios{
+  /*min-height:550px;
+  background:url('../IMG/Studio808/wod.jpg') 0;
+*/background-color: #FFFFFF;
+text-align: center;
+  color: black;
+  max-width: 100%;
+}
+#studios h1{
+  font-size:55px;
+}
+#studios p{
+  font-size:20px;
+}
+
+
+/******************************Choreographer form*****************************************/
+#p1{
+  margin-top: 100px;
+  float:left;
+}
+#p2{
+  margin-top: 100px;
+  float: right;
+}
+#wformfield .sandfinput{
+  margin-top: 60px;
+}
+/**********************************Kaneohe Image***********************/
+ #kaneoheimg {
+     min-height:550px;
+   background:url('../IMG/247/kaneohe.jpg')  -10px, 0, 100px;
+   text-align: center;
+   color: #ffffff;
+ }
+ #kaneoheimg h1{
+   margin-top: 150px;
+   font-size:55px;
+ }
+ #kaneoheimg p{
+   margin-top: 30px;
+   font-size:18px;
+ }
+ section .kighlight{
+   color: #98e884;
+   font-weight:bold;
+ }
+ section .kighlight2{
+   color:#7bd9e0;
+ }
+
+/*************247 dance studio*************/
+#twentyfourdance {
+  text-align: center;
+    color: #808080;
+}
+#twentyfourdance  h1{
+  margin-top: 10px;
+  font-size:55px;
+}
+#twentyfourdance  p{
+  margin-top: 20px;
+  font-size:18px;
+}
+/**********************************Background image**********************************/
+#dancerimg{
+  min-height:550px;
+  background:url('../IMG/Streetdance.jpg') 0 -600px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#dancerimg h1{
+  margin-top: 150px;
+  font-size:55px;
+
+}
+
+#dancerimg p{
+  font-size: 18px;
+}
+
+#boxes{
+  margin-top: 20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+#boxes .box img{
+  width: 200px;
+}
+/**********************************transitions portraits by popping**********************************/
+
+
+
+footer{
+  padding:20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #008080;
+  text-align: center;
+}

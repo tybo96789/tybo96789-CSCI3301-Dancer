@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<style>
+#wrapper {
+  width: 1500px;
+  height:100px;
+  margin:50px auto 0 auto;
+}
+#instructor{
+  float:left;
+  height:150px;
+  width: 250px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  color: black;
+  margin:50px;
+  background-image:url("./IMG/Studio808/instructor.jpg");
+  opacity:0.5;
+  border-radius: 8px;
+}
+#instructor:hover{
+  transition: .3s;
+  opacity: 1;
+  color:black;
+}
+#dancers{
+  float:left;
+  height:150px;
+  width: 250px;
+  text-align: center;
+    font-weight: bold;
+  line-height: 100px;
+  color: black;
+  margin:50px;
+  background-image:url("./IMG/Studio808/dancers.jpg");
+  opacity:0.5;
+  border-radius: 8px;
+}
+#dancers:hover{
+  transition: .3s;
+  opacity: 1;
+  color:black;
+}
+#style{
+  float:left;
+  height:150px;
+  width: 250px;
+  text-align: center;
+    font-weight: bold;
+  line-height: 100px;
+  color: black;
+  margin:50px;
+  background-image:url("./IMG/Studio808/style.jpg");
+  opacity:0.5;
+  border-radius: 8px;
+}
+#style:hover{
+  transition: .3s;
+  opacity: 1;
+  color:black;
+}
+#StudioBorder{
+  margin: auto;
+  overflow: hidden;
+  justify-content: center;
+
+}
+</style>
+  <head>
+
+    <title>Kaneohe</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <body>
+    <script type="text/javascript">//////////////////////JAVASCRIPT START///////////////////////
+    var s1_247= document.getElementById("hip_hop_247").value;
+    var s2_247= document.getElementById("jazz_247").value;
+    var s3_247= document.getElementById("ballet_247").value;
+    var name_= document.getElementById("name_247").value;
+    var position= document.getElementById("position_247").value;
+    var submit_ = document.getElementById("Submit").value;
+    	function correct(){
+    	var name = document.getElementById("dancer");
+    	var position = document.getElementById("position");
+    		}
+    window.onload = function(){
+    	document.getElementById("dancer").addEventListener('input', valid);
+    	document.getElementById("position").addEventListener('input', valid);
+    };
+    </script><!---Javascript END--------------------------->
+    <header>
+
+      <div class = "container"><!--Navigation Area-->
+          <div id="Basename">
+              <h1><span class="highlight">Dancer</span> Database</h1>
+          </div>
+          <nav>
+              <ul>
+                <li><a href="waipahu.html" style="text-decoration:none">Waipahu</a></li>
+                <li><a href="Search.html" style="text-decoration:none">Search Database</a></li>
+                <li><a href="modify.html" style="text-decoration:none">Add/Delete</a></li>
+                <li><a href="index.html" style="text-decoration:none">Home</a></li>
+              </ul>
+          </nav>
+      </div>
+    </header>
+      <section id="kaneoheimg"><!--This Section contains information about the Database-->
+          <div class="container">
+            <h1><span class="kighlight">Kane</span><span class="kighlight2">ohe</span></h1>
+            <p>Kāneʻohe is a census-designated place included in the City and County of Honolulu and located in Hawaiʻi state District of Koʻolaupoko on the island of Oʻahu. In the Hawaiian language, kāne ʻohe means "bamboo man".</p>
+            </div>
+        </section>
+
+          <section id="studios"><!--Entire Section-->
+            <div id="StudioBorder"><!--Outermost div-->
+                <h1>24/7 Dancestudio</h1>
+                <p>24-7 Danceforce, a non-profit organization, exists to continually motivate and create as a company in the art of dance and life; to always grow as individuals, becoming people of good character and integrity,
+                    always compassionate of others; to inspire others to strive for their highest potential. </p>
+                    <!--Name element-->
+                    <p >Name <input type="text" name="name_247" placeholder="..."></p>
+                    <!--Position Element-->
+                      <p >Position <input type="text" name="position_247" placeholder="..."></p>
+                      <!--Style Values-->
+                      Style: <select name="style">
+                        <option value="hip_hop_247">Hip-Hop</option>
+                        <option value="ballet_247">Ballet</option>
+                        <option value="jazz_247">Jazz</option>
+                        </select>
+                        <br>
+                        <br>
+                      <input type="submit" name="submit" value="Submit">
+              </div><!--Outermost div-->
+
+      </section>
+
+  </body>
+</html>
